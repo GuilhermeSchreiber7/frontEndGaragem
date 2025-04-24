@@ -1,9 +1,18 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import garagemHeader from '@/components/garagemHeader.vue';
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <div class="app">
+    <garagemHeader/>
+    <RouterView />
+  </div>
 </template>
+<style scoped>
+  .app{
+    height: 100vh;
+    width: 100vw;
+
+    background-color: rgb(56, 56, 56)
+  }
+  </style>
